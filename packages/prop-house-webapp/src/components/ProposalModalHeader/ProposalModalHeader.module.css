@@ -84,7 +84,8 @@ hr {
 }
 .markdown img {
   max-width: 100%;
-  height: auto;
+  height: intrinsic;
+  object-fit: contain;
 }
 
 .communityAndPropNumber {
