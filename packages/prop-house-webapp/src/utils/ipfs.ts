@@ -32,7 +32,7 @@ export const buildCloudflareIpfsUrl = (matchGroups: IpfsImageSrcRegexMatch) =>
   `https://cloudflare-ipfs.com/ipfs/${matchGroups.fullIpfsPath}`;
 
 export const buildHostedPinataIpfsUrl = (matchGroups: IpfsImageSrcRegexMatch) =>
-  `https://prophouse.mypinata.cloud/ipfs/${matchGroups.fullIpfsPath}?img-width=930`;
+  `https://prophouse.mypinata.cloud/ipfs/${matchGroups.fullIpfsPath}`;
 
 export const cidToV1 = (cid: string) => CID.parse(cid).toV1().toString(base32.encoder);
 
